@@ -2,12 +2,12 @@ require 'pry'
 
 def hello(array)
   i = 0
+  binding.pry
   while i < array.length
+    binding.pry
     yield(array[i])
-     binding pry 
     i += 1
   end
-
 end
 
 
