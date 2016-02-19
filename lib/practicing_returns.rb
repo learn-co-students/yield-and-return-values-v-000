@@ -9,7 +9,6 @@ def hello(array)
 end
 
 binding.pry
-#hello(["Tim", "Tom", "Jim"]) { |name| puts "Hi, #{name}" }
 hello(["Tim", "Tom", "Jim"]) { |name| "Hi, #{name}" }
 
 #Save the return value of yield(array[i])
