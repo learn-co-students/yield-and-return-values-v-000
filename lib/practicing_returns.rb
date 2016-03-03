@@ -9,4 +9,5 @@ def hello(array)
 end
 
 
+#my comment
 hello(["Tim", "Tom", "Jim"]) { |name| puts "Hi, #{name}" }
