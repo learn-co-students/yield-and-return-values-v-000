@@ -1,5 +1,3 @@
-require 'pry'
-
 def hello(array)
   i = 0
   collection = []
@@ -10,4 +8,4 @@ def hello(array)
   collection
 end
 
-puts hello(["Tim", "Tom", "Jim"]) { |name| "Hi, #{name}" }.inspect
+hello(["Tim", "Tom", "Jim"]) { |name| "Hi, #{name}" }
