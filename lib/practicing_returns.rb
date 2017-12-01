@@ -2,8 +2,6 @@ require 'pry'
 
 def hello(array)
 
-  if block_given?
-
     i = 0
     collection = []
     while i < array.length
