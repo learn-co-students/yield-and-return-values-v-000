@@ -2,11 +2,14 @@ require 'pry'
 
 def hello(array)
   i = 0
+  collection = [ ]
   while i < array.length
-    yield(array[i])
+    #can add binding.pry here to manually execute yield(array[i])
+    collection << yield(array[i])
     i += 1
   end
+  collection
 end
 
-
-hello(["Tim", "Tom", "Jim"]) { |name| puts "Hi, #{name}" }
+#can add binding.pry here to manually invoke #hello and see the return value
+hello(["Tim", "Tom", "Jim"]) { |name| "Hi, #{name}" }
