@@ -2,11 +2,18 @@ require 'pry'
 
 def hello(array)
   i = 0
+  puts array.length
+  collection = []
   while i < array.length
-    yield(array[i])
+
+    # str = yield(array[i])
+
+    collection << yield(array[i])
     i += 1
   end
+  puts "collection:"
+  puts collection.inspect
 end
 
 
-hello(["Tim", "Tom", "Jim"]) { |name| puts "Hi, #{name}" }
+hello(["Tom", "Tony", "Todd"]) {|name| "Hi, #{name}" }
